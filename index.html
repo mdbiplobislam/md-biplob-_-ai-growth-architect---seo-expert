@@ -1,25 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script>
-      (function() {
-        try {
-          var originalFetch = window.fetch;
-          Object.defineProperty(window, 'fetch', {
-            get: function() {
-              return originalFetch;
-            },
-            set: function(newValue) {
-              originalFetch = newValue;
-            },
-            configurable: true,
-            enumerable: true
-          });
-        } catch (e) {
-          console.warn("[Environment Shield] Could not define configurable fetch setter:", e);
-        }
-      })();
-    </script>
+   
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Md Biplob | AI-Driven Growth Architect, Technical SEO Expert & Digital Marketing Consultant</title>
