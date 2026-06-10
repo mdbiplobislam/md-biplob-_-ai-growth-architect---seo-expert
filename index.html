@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return originalFetch;
+            },
+            set: function(newValue) {
+              originalFetch = newValue;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          console.warn("[Environment Shield] Could not define configurable fetch setter:", e);
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Biplob | AI-Driven Growth Architect, Technical SEO Expert & Digital Marketing Consultant</title>
+    <meta name="description" content="Md Biplob is a lead Technical SEO Expert in Bangladesh, Digital Marketing Trainer, Freelancing Mentor, and AI-Driven Growth Architect scaling global brands." />
+    <meta name="keywords" content="SEO Expert in Bangladesh, SEO Consultant in Bangladesh, Digital Marketing Trainer, Freelancing Mentor, AI Marketing Consultant, Personal Branding Expert" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
