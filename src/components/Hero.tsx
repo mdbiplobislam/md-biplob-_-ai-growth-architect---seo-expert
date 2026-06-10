@@ -91,7 +91,7 @@ export default function Hero({ onCtaclick }: HeroProps) {
               <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-blue-500/60" />
 
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=600&h=600&q=80"
+                src="https://i.postimg.cc/ncHnHrd9/Md-Biplob.png?fit=crop&w=600&h=600&q=80"
                 alt="Md Biplob Portrait"
                 className="w-full h-auto aspect-square rounded-2xl object-cover object-top filter grayscale contrast-[1.1]"
                 referrerPolicy="no-referrer"
